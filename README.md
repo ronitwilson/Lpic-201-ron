@@ -27,3 +27,6 @@
       * 4 -> mount opitons (eg defaults)
       * 5 -> used by dump to dtermine which filesystem needs to be dumped used for backup (0 disables)
       * 6 -> determines oderder in which filesystem checks needs to be done(rootfs set to 1 all other set to 2, default 0)
+   * etc/mtab
+      * umount and mount maninded this list (nowadays symlink to proc/mount or /proc/self/mounts
+   * just mount command prints a lot of details
