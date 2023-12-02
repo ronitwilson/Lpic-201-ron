@@ -52,3 +52,12 @@
 *  Xfs filesystem
    * extens filesystem , change int he way blocks are allocated and managed
 * **dump32fs** prints the super block and block info
+
+# 02-12-2023
+## filesystem
+* xfs_repair command
+* Xfs dump and restore command
+   * There is various levels of backup
+      * level 1-9
+         * level 1 backup would be the incremental backup after a full backup
+         * a max of 9 such backup is possible         
