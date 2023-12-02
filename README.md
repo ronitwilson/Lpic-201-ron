@@ -61,3 +61,16 @@
       * level 1-9
          * level 1 backup would be the incremental backup after a full backup
          * a max of 9 such backup is possible         
+
+## Btrfs and Zfs filesystem
+* btrfs focuses on fault tolerence
+* It is copy on write filesystem -> when a change is made to file it retains the old file n saves the changes alone on another space
+* btrfs-convert command to convert ext2/3 fs to btrfs
+* It can be partof multiple discks (?? like part of the fs in one usb n remaining in another usb )
+   * For the os it will show as 1 fs mounted in a path, but actullay will be using more than one partition/disk
+* More than one subvolumes can be created and mounted
+   * Typically there will be 1 volume in ext2 is my understanding
+   * btrfs supports creating multiple sub volumes    
+* Zfs filesystem
+   * combines the feature of copy on write filesystem and volume manager
+   *     
