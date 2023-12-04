@@ -73,4 +73,9 @@
    * btrfs supports creating multiple sub volumes    
 * Zfs filesystem
    * combines the feature of copy on write filesystem and volume manager
-   *     
+
+# 04-12-2023
+ ## AutoFs
+ * Indirect mount and direct mount
+ *  
+ 
