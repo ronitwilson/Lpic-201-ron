@@ -77,5 +77,12 @@
 # 04-12-2023
  ## AutoFs
  * Indirect mount and direct mount
- *  
- 
+ *  /etc/auto.master
+    * /mnt/indirect /etc/auto.indirect <options>
+       * inside auto.indirect
+          * backup -fstype=ext3,ro :/dev/nvme1n1p2
+          * current -fstype=xfa,ro :/dev/nvme1n1p3
+    * direct mount
+       * /- /etc/auto.direct --timeout=600
+       * inside auto.direct
+          * /mnt/direct -fstype=btrfs:/dev/nvme1n1p
