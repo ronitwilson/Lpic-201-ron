@@ -86,3 +86,21 @@
        * /- /etc/auto.direct --timeout=600
        * inside auto.direct
           * /mnt/direct -fstype=btrfs:/dev/nvme1n1p
+
+
+# 9-12-2023
+## CD rom filesystem
+   * There is something called cd rom filesystem
+      * ISO 9660
+      * Universal Disk format
+      * Hierarchical file system
+## Data Encryption
+   * Linux Unified key setup
+      * It is a disk encryption spec
+         * It uses the dm-crpt kernel module
+         * **cryptsetup** ->main command for data encrypt->def: setup cryptographic volumes for dm-crypt -> we can create a fs inside the volume
+## SMART Devices
+   * smartd -> a daemon that monitors the (SMART) system built inot ATA,IDE and SCSI-3 hard drices
+      * It can notify incase of errors
+   * there is a smartctl tool
+
