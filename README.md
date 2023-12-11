@@ -104,3 +104,12 @@
       * It can notify incase of errors
    * there is a smartctl tool
 
+
+# 11-12-2023
+## Creating swap space [LAB]
+* Create and enable a swap partition using /dev/xvdg1.
+* Add an entry to /etc/fstab to ensure that the swap partition persists though a reboot (use the UUID)
+* Create and enable a 1 GB swap file in the root directory called "extraswap".
+* Add an entry to /etc/fstab to ensure that the swap file persists through a reboot (use the full path to the file name).
+
+
