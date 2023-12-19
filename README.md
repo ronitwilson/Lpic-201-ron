@@ -112,4 +112,9 @@
 * Create and enable a 1 GB swap file in the root directory called "extraswap".
 * Add an entry to /etc/fstab to ensure that the swap file persists through a reboot (use the full path to the file name).
 
-
+# 19-12-2023
+## Measuring system resources
+* There is something called Cpu util and device util(memory, disk usage, paging etc). 
+* IOSTAT, SAR, vm stat, free commands
+* The **sysstat** service normally provides all these tools
+* we can run these commands with an interval n count eg  iostat 1 5
