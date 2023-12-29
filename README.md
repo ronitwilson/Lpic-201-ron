@@ -118,3 +118,10 @@
 * IOSTAT, SAR, vm stat, free commands
 * The **sysstat** service normally provides all these tools
 * we can run these commands with an interval n count eg  iostat 1 5
+
+# 29-12-2023
+## More commands to measure system resources
+* lsof -> view all open files 
+   * lsof -i -> lists all open files based on network connections 
+   * lsof -D /var -> list all open files in that directory
+* ps, -> list process
