@@ -125,3 +125,11 @@
    * lsof -i -> lists all open files based on network connections 
    * lsof -D /var -> list all open files in that directory
 * ps, -> list process
+
+# 07-01-2024
+## PS command
+* ps -fC sshd
+* ps tree -> shows all the process are in graphical tree view
+* Top command
+   * we can see the field view by clicking the f key
+   * we can kill a process by typing k
