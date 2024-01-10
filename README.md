@@ -133,3 +133,13 @@
 * Top command
    * we can see the field view by clicking the f key
    * we can kill a process by typing k
+
+# 10-01-2024
+## Measuring network usage
+* netstat command
+   * netstat command is obsolete n replaced by ss command
+   * main option n,p,l (numerical address(does not resolve host name), shows pid, shows listening sockets)
+* w commnad
+   * shows current time and how long the system has been running
+* uptime command
+   * shows how long the system is running
