@@ -143,3 +143,17 @@
    * shows current time and how long the system has been running
 * uptime command
    * shows how long the system is running
+ 
+# 13-01-2024
+## Measuring system resources
+* nagios
+   * agent mode
+   * snmp mode agentless mode
+* icinga2
+   * fork of nagios
+* mrtga
+   * monitor the network usage, uses snmp protocol
+* cacti
+   * works together with rrd tool
+* collectd
+   *Has plugins based on the resource we want to monitor 
