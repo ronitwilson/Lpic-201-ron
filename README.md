@@ -156,4 +156,10 @@
 * cacti
    * works together with rrd tool
 * collectd
-   *Has plugins based on the resource we want to monitor 
+   *Has plugins based on the resource we want to monitor
+
+  # 16-01-2024
+  ## configuring collectd
+  * cofigure /etc/collectd/collectd.conf  with the hostname etc
+  * we shoulde configure cgi.load  which is a apache2 mod n copy some files to make collectd available voa apache server
+  * We can use such tools to figureout how the capacity is being used
