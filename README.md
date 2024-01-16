@@ -163,3 +163,4 @@
   * cofigure /etc/collectd/collectd.conf  with the hostname etc
   * we shoulde configure cgi.load  which is a apache2 mod n copy some files to make collectd available voa apache server
   * We can use such tools to figureout how the capacity is being used
+  * Collectd can also be used to collect application data n see over network (but no detailed explain)
