@@ -164,3 +164,9 @@
   * we shoulde configure cgi.load  which is a apache2 mod n copy some files to make collectd available voa apache server
   * We can use such tools to figureout how the capacity is being used
   * Collectd can also be used to collect application data n see over network (but no detailed explain)
+
+# 20-01-2024
+  ## Understanding Raid
+  * Striping(multiple device presented as single device), mirroring(prvides backup), block level stripping
+  * ![image](https://github.com/ronitwilson/Lpic-201-ron/assets/9934360/4e2fea55-974f-40c1-a8e8-1bea9dc457de)
+
