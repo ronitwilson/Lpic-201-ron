@@ -169,4 +169,6 @@
   ## Understanding Raid
   * Striping(multiple device presented as single device), mirroring(prvides backup), block level stripping
   * ![image](https://github.com/ronitwilson/Lpic-201-ron/assets/9934360/4e2fea55-974f-40c1-a8e8-1bea9dc457de)
+  * 0xFD partition type for RAID partition
+  * /proc/mdstat -> displays snaphot of kernels RAID/md state
 
