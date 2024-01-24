@@ -188,4 +188,15 @@
    *  cat /proc/interrupts
    *  ls -l /proc/irq
    *  ![image](https://github.com/ronitwilson/Lpic-201-ron/assets/9934360/816a1749-d416-453f-8d26-d621547410f0)
+*  hdparm utility -> for STATA/IDE devices
+   *  devices of this type will be /dev/hd*
+   *  -I more info
+   *  -t for testing timings of device
+*  sdparm -> for SCSI/SATA
+   *   --commnad=CMD sends SCSI command on device
+*  nvme utility -> for pci express-based devices
+   *   smart-log -> retrive smart log
+   *   list -> lists all nvme controllers
+*   fstrim ->discard unwanted block on mounter FS
+   *   discard option in /etc/fstrab ofr automatic trim ( **not recommended** )
 
