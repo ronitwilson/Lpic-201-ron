@@ -180,3 +180,5 @@
   * create some files in that folder -> using touch
   * fail the raid using command -> mdadm -f  /dev/md0 /dev/nvme1n1p1
   * Raid recovers by recovering the spare partition
+  * add more partition to the raid config madadm -a /dev/md0  /dev/nvm1/p4 /dev/nvm1/p5
+     * run this to rebuild the raid config to retain after reboot -> mdadm -D -s -v > /etc/mdadm.comf
