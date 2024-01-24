@@ -172,3 +172,11 @@
   * 0xFD partition type for RAID partition
   * /proc/mdstat -> displays snaphot of kernels RAID/md state
 
+# 24-01-2024
+  ## Managing Fail over and Recovery of RAID device
+  * use cat /proc/mdstat -> to check the raid state
+  * create filesystem on the raid partition using -> mkfs.ext4 /dev/md0
+  * mount the partiton to dir /mnt/raid -> mount -t ext4 /dev/md0 /mnt/raid
+  * create some files in that folder -> using touch
+  * fail the raid using command -> mdadm -f  /dev/md0 /dev/nvme1n1p1
+  * Raid recovers by recovering the spare partition
