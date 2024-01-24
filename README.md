@@ -182,3 +182,10 @@
   * Raid recovers by recovering the spare partition
   * add more partition to the raid config madadm -a /dev/md0  /dev/nvm1/p4 /dev/nvm1/p5
      * run this to rebuild the raid config to retain after reboot -> mdadm -D -s -v > /etc/mdadm.comf
+   
+## Working with Physical Storage devices
+* DMA and interrupt handling
+   *  cat /proc/interrupts
+   *  ls -l /proc/irq
+   *  ![image](https://github.com/ronitwilson/Lpic-201-ron/assets/9934360/816a1749-d416-453f-8d26-d621547410f0)
+
