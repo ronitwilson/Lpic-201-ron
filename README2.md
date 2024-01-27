@@ -1,4 +1,4 @@
-![image](https://github.com/ronitwilson/Lpic-201-ron/assets/9934360/cfb226e1-0436-45d7-bd0a-bc384dd139c9)# 26-01-2024
+# 26-01-2024
 ## Advanced Storage and adminstration
 ### using an iSCSI Target and initiater
 * IT is for network storage -> involves using a initiator(client) and target(server)
