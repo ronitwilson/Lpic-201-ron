@@ -1,4 +1,4 @@
-# 26-01-2024
+![image](https://github.com/ronitwilson/Lpic-201-ron/assets/9934360/cfb226e1-0436-45d7-bd0a-bc384dd139c9)# 26-01-2024
 ## Advanced Storage and adminstration
 ### using an iSCSI Target and initiater
 * IT is for network storage -> involves using a initiator(client) and target(server)
@@ -14,3 +14,21 @@
 *  iScsi structure`
   *  ![image](https://github.com/ronitwilson/Lpic-201-ron/assets/9934360/6b44603f-2936-418a-993b-2061c3ccb85f)
 
+# 27-01-2024
+## Creating and managing Logical volumes
+* Suppose there are 2 pen drives with 16gb but one file of 20 gb we can solve this problem with logical volumes
+ * ![image](https://github.com/ronitwilson/Lpic-201-ron/assets/9934360/88fe4dd3-a79f-44ac-aff8-2f6cf2882895)
+* pvcreate -> create **physical volume**
+* pvscan -> scan all supported LVM ,
+* pvdisplay -> shows info
+* lvcreate -> create a logical volume
+* vgcreate -> create a volume group
+* **Steps**
+ * pvcreate /dev/nvme11p{1,2}
+ * vgcreate data_vg /dev/nvme1n1p{1,2}
+ * lvcreate -L 200 -n backup data_vg
+ * lvcreate -L 20 -n backup_2 data_vg
+ * lvdisplay
+ * mkdir /mnt/backup
+ * mount -t ext4 /dev/data_vg/backup /mnt/backup
+ * Further we can use lvreduce,lvextend to resize the lv size
