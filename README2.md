@@ -32,3 +32,17 @@
  * mkdir /mnt/backup
  * mount -t ext4 /dev/data_vg/backup /mnt/backup
  * Further we can use lvreduce,lvextend to resize the lv size
+
+# 31-01-2024
+## cerating and using snapshots
+* lvcreate -s -> create a snapshot
+* lvchange  -an /dev/data_vg/current
+* lvconvert --merge data_vg/cu_snap1 -> this merges the snapshor to the /data_vg/current from which the snapshot was taken
+
+## system maintenance
+### taking backups / Installing and patching a program from source
+* /usr/src -> used as a reference for program source codes, not ment to be build here
+* /usr/local -> ofr installing software locally
+* /opt-> installation of add-on apps
+* gzip -> .gz, .z, .tgz
+* bzip2 -> .bz2, .bz, .tbz
