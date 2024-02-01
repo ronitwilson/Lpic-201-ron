@@ -46,3 +46,14 @@
 * /opt-> installation of add-on apps
 * gzip -> .gz, .z, .tgz
 * bzip2 -> .bz2, .bz, .tbz
+
+
+# 01-02-2024
+### Steps necessary to install a program from source
+* ./configure
+* ./make
+* ./make install
+### creating and patching a source file
+* run diff command with -u
+ * example diff -u old/index.html new/index.html > index.patch
+ * patch -u -b index.html  -i index.patch (-b for backup)
