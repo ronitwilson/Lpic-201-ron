@@ -13,3 +13,7 @@
 ## Troubleshoot cpu utilization
 * debug applications freezing intermittently
 * use systat package to diagnoise issue
+* use free -h -> mem usage
+* use iotstat 1 3 -> cpu usage
+* use top -> see process details
+* us ps -ef ->see process specific details
