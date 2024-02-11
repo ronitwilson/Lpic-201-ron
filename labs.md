@@ -17,3 +17,12 @@
 * use iotstat 1 3 -> cpu usage
 * use top -> see process details
 * us ps -ef ->see process specific details
+
+# 10-02-2024
+## capacity usage reports
+* need to justify the need to buy more hw resources
+* use **systat service** , **sar**, **vmstat**, **iostat**
+* install and use sysstat package
+* Update the sysstat cron file -> (/etc/cron.d/systat)
+  * example - */10 * * * * root /usr/lib64/sa/sa1 1 1
+* 
