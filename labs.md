@@ -27,5 +27,8 @@
   * example - */10 * * * * root /usr/lib64/sa/sa1 1 1
 * 
 
-# 12-02-2024
+# 12-02-2024 
 ## Configuring isci on Linux
+* ON target machine
+ * install targetcli
+ * 
