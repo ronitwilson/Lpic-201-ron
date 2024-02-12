@@ -30,5 +30,8 @@
 # 12-02-2024 
 ## Configuring isci on Linux
 * ON target machine
- * install targetcli
- * 
+ * install targetcli 
+ *  create the block01 and block02 backstore from /dev/xvdf and from /dev/xvdg
+ *  create lun for the block
+ *  create acl
+ *  
