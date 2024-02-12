@@ -9,7 +9,7 @@
 * fail active device and observe behaviour
 * add new device to RAID
 
-# 10-02-2024
+# 11-02-2024
 ## Troubleshoot cpu utilization
 * debug applications freezing intermittently
 * use systat package to diagnoise issue
@@ -18,7 +18,7 @@
 * use top -> see process details
 * us ps -ef ->see process specific details
 
-# 10-02-2024
+# 11-02-2024
 ## capacity usage reports
 * need to justify the need to buy more hw resources
 * use **systat service** , **sar**, **vmstat**, **iostat**
@@ -26,3 +26,6 @@
 * Update the sysstat cron file -> (/etc/cron.d/systat)
   * example - */10 * * * * root /usr/lib64/sa/sa1 1 1
 * 
+
+# 12-02-2024
+## Configuring isci on Linux
