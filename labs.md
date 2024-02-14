@@ -35,3 +35,9 @@
  *  create lun for the block
  *  create acl
  *  
+
+# 14-02-2024 
+## Analyzing nw traffic on Linux
+### explore nmap,ss, lsof, and tcpdump
+* use nmap to scan for open tcp port ->  **nmap -F <ip>**
+* 
