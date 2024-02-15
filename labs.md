@@ -39,5 +39,6 @@
 # 14-02-2024 
 ## Analyzing nw traffic on Linux
 ### explore nmap,ss, lsof, and tcpdump
+#### Scan for Open Ports
 * use nmap to scan for open tcp port ->  **nmap -F <ip>**
-* 
+* **nmap -sT -F 10.0.1.10**
