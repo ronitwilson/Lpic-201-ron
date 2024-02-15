@@ -42,3 +42,12 @@
 #### Scan for Open Ports
 * use nmap to scan for open tcp port ->  **nmap -F <ip>**
 * **nmap -sT -F 10.0.1.10**
+#### Analyze the Listening Sockets
+* ss -tulnp
+* lsof | grep ssh | wc -l -> total number of files opened by ssh
+#### Perform packet capture
+* tcpdump -D -> see which packets are able to capture packets
+* Doing packt capture
+ * tcpdump -i ens7 -c 5 -w test.pcap
+ * tcpdump -r test.pcap
+ * 
