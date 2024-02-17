@@ -79,3 +79,14 @@
 ## Creating Logon Messages to Communicate with Users in Linux
 * /etc/ssh/sshd_config -> Banner /etc/issue.net -> Present a Message to Users Logging In Remotely Based
 * vi /etc/motd -> Present a Message to Users Who Have Successfully Logged In
+
+## Working with Logical Volumes
+### we cover creating physical volumes, grouping them into a volume group, creating logical volumes from the volume group, and creating and mounting file systems on the logical volumes
+* Turn the partitions into physical volumes: pvcreate /dev/xvdf{1..4}
+* Put the volumes into a volume group: vgcreate user_vg /dev/xvdf{1..4}
+* Create the dev_lv logical volume: lvcreate -L 200M -n dev_lv user_vg
+* Create the ext4 file system on dev_lv: mkfs.ext4 /dev/user_vg/dev_lv
+* List the current logical volumes: lvs
+* Extend the graphics_lv logical volume: lvextend -l +50 -r /dev/admin_vg/graphics_lv
+* Take a snapshot of the prod_lv volume: lvcreate -L 50M -s -n prod_snap /dev/admin_vg/prod_lv
+* Restore stage_snap to its origin volume: lvconvert --merge admin_vg/stage_snap
