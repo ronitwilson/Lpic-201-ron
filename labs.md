@@ -57,3 +57,15 @@
  * tcpdump -i ens7 -c 5 -w test.pcap
  * tcpdump -r test.pcap
  * 
+
+# 17-02-204
+## Compiling a Program from Source
+### You have been tasked with setting up a system with the two web servers that are under consideration: nginx and httpd. In order to complete this task, you will need to obtain the source code tarballs and extract them in /usr/local/src. Once extracted, you will need to install nginx to /usr/local/nginx, being sure to exclude the rewrite and gzip modules. Be sure that nginx is functioning properly before installing and testing the httpd server. Then, you will need to install httpd to /opt/httpd-2.2.9 and ensure that is working as expected.
+* use wget to download the source
+* run ./configure with flags
+ *  ./configure --prefix=/usr/local/nginx --without-http_rewrite_module --without-http_gzip_module
+ *  ../configure --prefix=/opt/httpd-2.2.9
+*  make
+*  make install
+ *  file found insdie /usr/local/nginx/sbin
+ *  file found inside /opt/httpd-2.2.9/bin/
