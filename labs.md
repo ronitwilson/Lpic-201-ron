@@ -32,9 +32,15 @@
 * ON target machine
  * install targetcli 
  *  create the block01 and block02 backstore from /dev/xvdf and from /dev/xvdg
+ *  Create the iSCSI target with the following unique IQN
  *  create lun for the block
  *  create acl
- *  
+*   iSCSI Initiator
+ *   add initiator name in vim /etc/iscsi/initiatorname.iscsi
+ *   Discover the iSCSI target
+ *   scan target
+ *   Connect to the target:
+ *   Verify that iscsi is running 
 
 # 14-02-2024 
 ## Analyzing nw traffic on Linux
