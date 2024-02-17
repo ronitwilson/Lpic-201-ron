@@ -69,3 +69,9 @@
 *  make install
  *  file found insdie /usr/local/nginx/sbin
  *  file found inside /opt/httpd-2.2.9/bin/
+
+## Performing Backups and Restores on a Linux Host
+### Use the tar Command to Create Backups of Directories on the server01 Hos
+### Use the dd Command to Create and Restore Backups of Devices on the server01 Host
+### Synchronize Backups to server02 Using the rysnc Command on the server01 Host 
+### Validate the Backup Files and Directories Were Successfully Copied on the server02 Host
