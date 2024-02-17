@@ -75,3 +75,7 @@
 ### Use the dd Command to Create and Restore Backups of Devices on the server01 Host
 ### Synchronize Backups to server02 Using the rysnc Command on the server01 Host 
 ### Validate the Backup Files and Directories Were Successfully Copied on the server02 Host
+
+## Creating Logon Messages to Communicate with Users in Linux
+* /etc/ssh/sshd_config -> Banner /etc/issue.net -> Present a Message to Users Logging In Remotely Based
+* vi /etc/motd -> Present a Message to Users Who Have Successfully Logged In
